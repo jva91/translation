@@ -1,0 +1,42 @@
+{
+  "name": "jva91/translation",
+  "description": "Laravel package for database translations",
+  "type": "composer-plugin",
+  "license": "mit",
+  "authors": [
+    {
+      "name": "Jason van Altena",
+      "email": "info@jasonvanaltena.nl",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "require-dev": {
+    "orchestra/testbench": "^3.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Jva91\\Translation\\": "src",
+      "Jva91\\Translation\\Tests\\": "tests/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Jva91\\Translation\\Tests\\": "tests/"
+    },
+    "classmap": [
+      "tests/TranslationTestCase.php"
+    ]
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Jva91\\Translation\\TranslationServiceProvider"
+      ]
+    }
+  }
+}
