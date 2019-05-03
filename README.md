@@ -11,7 +11,7 @@ or manually add in `composer.json`
 
     "require": {
     
-        "jva91/translation": "0.*"
+        "jva91/translation": "0.1.x-dev"
     }
     
 After add this line run `composer install`
