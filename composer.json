@@ -1,7 +1,6 @@
 {
   "name": "jva91/translation",
   "description": "Laravel package for database translations",
-  "type": "composer-plugin",
   "license": "mit",
   "authors": [
     {
