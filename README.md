@@ -1,9 +1,9 @@
-##Jva91/Translation
+## Jva91/Translation
 A easy package to manage database translations for Laravel
 
-###Installation
+### Installation
 
-####Using composer
+#### Using composer
 
     composer require jva91/translation
 
@@ -24,22 +24,22 @@ This package package contains auto discovery. When auto discovery is disabled re
      ]
 
 
-###Publishing
+### Publishing
 This package publishes a config file.
 
     php artisan vendor:publish --provider="Jva91\Translation\TranslationServiceProvider" --tag="config"
     
-###Migration
+### Migration
 This package contains a default migration this will be executed with
 
     php artisan migrate
     
-###Model
+### Model
 This package contains a default model
 
     Jva91\Translation\Models\Translation
     
-###Usage
+### Usage
 The package can be used by using the delivered trait `Jva91\Translation\Traits\TranslationsTrait`
 
     class FakeModel extends Model
@@ -73,9 +73,9 @@ To delete a translation for a specific locale
 
     $fakeModel->deleteForLocale('name', 'nl_NL');
     
-###Testing
+### Testing
 This package is covered by unit tests
 
-###Feature functions
+### Feature functions
 
 - Console command to delete unused translations from table
